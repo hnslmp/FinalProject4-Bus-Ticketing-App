@@ -10,26 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject4BusTicketingApp">
         <activity
+            android:name=".BusListActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="false" />
         <activity
             android:name=".Home"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".daftar"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
-
+            android:exported="false"></activity>
     </application>
 
 </manifest>
