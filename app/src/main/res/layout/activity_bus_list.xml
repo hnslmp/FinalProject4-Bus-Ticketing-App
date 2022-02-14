@@ -5,5 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BusListActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/background_main"
+        android:gravity="left"
+        android:paddingStart="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Jakarta - Lampung"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
