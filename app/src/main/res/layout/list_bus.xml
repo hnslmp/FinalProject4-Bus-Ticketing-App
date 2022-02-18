@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_list"
+    android:elevation="7dp"
+    android:layout_marginTop="8dp"
+ >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            style="@style/main_text2"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Bus Rajawali"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="13sp"
+                android:text="17:30"
+                style="@style/main_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="------"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="4dp"
+                />
+            <TextView
+                android:textSize="13sp"
+                android:text="22:30"
+                android:layout_marginStart="4dp"
+                style="@style/main_text"/>
+        </LinearLayout>
+        <TextView
+            style="@style/main_text"
+            android:textSize="13sp"
+            android:text="Ac/Sleeper"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/tipi"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/wifi"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:layout_gravity="end"
+        android:paddingTop="32dp">
+        <TextView
+            style="@style/main_text"
+            android:text="Rp 800.000"
+            android:textSize="10sp"
+            android:background="@drawable/strikethrought_shape"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/main_text2"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#DF1F1F"
+                android:text="Rp "/>
+            <TextView
+                style="@style/main_text2"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#DF1F1F"
+                android:text="450.000"/>
+            <TextView
+                style="@style/main_text"
+                android:textSize="12sp"
+                android:text="/pax"/>
+        </LinearLayout>
+
+
+
+
+
+            
+    </LinearLayout>
+
+
+</LinearLayout>
