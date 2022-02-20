@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:elevation="7dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            >
+            <TextView
+                style="@style/main_text2"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Order ID : 19283817381"
+                android:textColor="@color/orange_main"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textSize="14sp"
+                    android:text="Jakarta"
+                    android:fontFamily="@font/poppins_semibold"
+                    style="@style/main_text2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="-"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="4dp"
+                    />
+                <TextView
+                    android:textSize="14sp"
+                    android:text="Bandung"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginStart="4dp"
+                    style="@style/main_text2"/>
+            </LinearLayout>
+            <TextView
+                style="@style/main_text"
+                android:textSize="12sp"
+                android:text="Kamis, 17 Feb 2022 19:10"
+                android:textColor="#666666"
+                />
+            <TextView
+                style="@style/main_text"
+                android:textSize="12sp"
+                android:text="Bus Sejahtera"
+                android:textColor="#666666"
+                />
+
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#858585" />
+        </LinearLayout>
+

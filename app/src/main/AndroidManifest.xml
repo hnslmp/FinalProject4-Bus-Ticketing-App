@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject4BusTicketingApp">
         <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".SuccessPayment"
             android:exported="false" />
         <activity
