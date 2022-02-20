@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PesanTiketActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/background_main"
+        android:gravity="left"
+        android:paddingStart="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Form Pemesanan"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/main_text2"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Detail Pembelian"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="380dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_detail"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            style="@style/main_text2"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Jakarta - Lampung"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="#9E9E9E" />
+
+        <TextView
+            style="@style/main_text"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Rabu,16 Feb 2022 17:30"
+            android:textSize="13sp" />
+
+        <TextView
+            style="@style/main_text"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Ac/Sleeper"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/textView2"
+        style="@style/main_text2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Detail Pembelian"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="105dp"
+        android:background="@drawable/bg_detail"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        <EditText
+            android:layout_width="323dp"
+            android:layout_height="40dp"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_light"
+            android:backgroundTint="#E1E1E1"
+            android:paddingTop="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:hint="Name" />
+        <EditText
+            android:layout_width="323dp"
+            android:layout_height="40dp"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_light"
+            android:backgroundTint="#E1E1E1"
+            android:paddingTop="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            android:hint="Phone Number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_payment"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <TextView
+                style="@style/main_text"
+                android:textSize="14sp"
+                android:textColor="#1B1B1B"
+                android:text="Total"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingStart="240dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp">
+                <TextView
+                    style="@style/main_text2"
+                    android:textSize="20sp"
+                    android:textColor="#FF4C20"
+                    android:text="Rp "/>
+                <TextView
+                    style="@style/main_text2"
+                    android:textSize="20sp"
+                    android:textColor="#FF4C20"
+                    android:text="450.000"/>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+
+            android:background="@drawable/btn_main"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Daftar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

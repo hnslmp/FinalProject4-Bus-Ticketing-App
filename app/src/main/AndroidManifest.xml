@@ -10,10 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject4BusTicketingApp">
         <activity
-            android:name=".daftar"
+            android:name=".HistoryActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SuccessPayment"
+            android:exported="false" />
+        <activity
+            android:name=".PesanTiketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BusListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +36,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".daftar"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
