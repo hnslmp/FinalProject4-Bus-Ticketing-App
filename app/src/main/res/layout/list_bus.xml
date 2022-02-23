@@ -16,6 +16,15 @@
         android:layout_marginTop="8dp"
         >
         <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            style="@style/main_text"
+            />
+        <TextView
+            android:id="@+id/namaBus"
             style="@style/main_text2"
             android:textSize="16sp"
             android:fontFamily="@font/poppins_medium"
@@ -90,6 +99,7 @@
                 android:textColor="#DF1F1F"
                 android:text="Rp "/>
             <TextView
+                android:id="@+id/hargaBus"
                 style="@style/main_text2"
                 android:textSize="16sp"
                 android:fontFamily="@font/poppins_regular"

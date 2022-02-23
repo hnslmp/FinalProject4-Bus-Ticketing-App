@@ -5,16 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PesanTiketActivity">
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"
+        style="@style/main_text"
+        />
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@drawable/background_main"
         android:gravity="left"
-        android:paddingStart="52dp"
         android:orientation="horizontal"
+        android:paddingStart="52dp"
         app:layout_constraintTop_toTopOf="parent">
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,6 +35,7 @@
 
 
     </LinearLayout>
+
     <ImageView
         android:id="@+id/back_btn"
         android:layout_width="24dp"
@@ -61,13 +69,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
-        <TextView
-            style="@style/main_text2"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="Jakarta - Lampung"
-            android:textSize="14dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_asal"
+                style="@style/main_text2"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Jakarta"
+                android:textSize="14dp" />
+
+            <TextView
+                style="@style/main_text2"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="-"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_tujuan"
+                style="@style/main_text2"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Medan"
+                android:textSize="14dp" />
+        </LinearLayout>
+
 
         <View
             android:layout_width="match_parent"
@@ -76,6 +109,7 @@
             android:background="#9E9E9E" />
 
         <TextView
+            android:id="@+id/tv_tanggal"
             style="@style/main_text"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
@@ -105,95 +139,101 @@
     <LinearLayout
         android:layout_width="380dp"
         android:layout_height="105dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/bg_detail"
         android:orientation="vertical"
-        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
+
         <EditText
             android:layout_width="323dp"
             android:layout_height="40dp"
-            android:drawablePadding="8dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/poppins_light"
-            android:backgroundTint="#E1E1E1"
-            android:paddingTop="4dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            android:hint="Name" />
+            android:backgroundTint="#E1E1E1"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Name"
+            android:paddingTop="4dp"
+            android:textColor="@color/black" />
+
         <EditText
             android:layout_width="323dp"
             android:layout_height="40dp"
-            android:drawablePadding="8dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/poppins_light"
-            android:backgroundTint="#E1E1E1"
-            android:paddingTop="4dp"
-            android:layout_marginTop="4dp"
             android:layout_marginStart="16dp"
-            android:hint="Phone Number" />
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#E1E1E1"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Phone Number"
+            android:paddingTop="4dp"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:orientation="vertical"
         android:background="@drawable/bg_payment"
+        android:orientation="vertical"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             android:orientation="horizontal">
+
             <TextView
                 style="@style/main_text"
-                android:textSize="14sp"
-                android:textColor="#1B1B1B"
-                android:text="Total"
-                android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
-                />
+                android:layout_marginTop="16dp"
+                android:text="Total"
+                android:textColor="#1B1B1B"
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:paddingStart="240dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginTop="16dp">
+                android:orientation="horizontal"
+                android:paddingStart="240dp">
+
                 <TextView
                     style="@style/main_text2"
-                    android:textSize="20sp"
+                    android:text="Rp "
                     android:textColor="#FF4C20"
-                    android:text="Rp "/>
+                    android:textSize="20sp" />
+
                 <TextView
+                    android:id="@+id/tv_harga"
                     style="@style/main_text2"
-                    android:textSize="20sp"
+                    android:text="450.000"
                     android:textColor="#FF4C20"
-                    android:text="450.000"/>
+                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
+
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBooking"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
 
             android:background="@drawable/btn_main"
             android:fontFamily="@font/poppins_medium"
-            android:text="Daftar"
+            android:text="Booking"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20dp" />
-
-
 
 
     </LinearLayout>

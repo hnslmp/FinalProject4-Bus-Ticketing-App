@@ -57,7 +57,8 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:layout_width="323dp"
+                    android:id="@+id/etAsal"
+                    android:layout_width="350dp"
                     android:layout_height="40dp"
                     android:drawableLeft="@drawable/departure"
                     android:drawablePadding="8dp"
@@ -65,15 +66,7 @@
                     android:textColor="@color/black"
                     android:fontFamily="@font/poppins_light"
                     android:paddingTop="4dp"
-                    android:text="Medan (MDN)" />
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="-4dp"
-                    android:layout_marginTop="8dp"
-                    android:src="@drawable/buttonswitch" />
+                    android:text="Medan" />
             </LinearLayout>
         </LinearLayout>
 
@@ -94,6 +87,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/etTujuan"
                     android:layout_width="350dp"
                     android:layout_height="40dp"
                     android:drawableLeft="@drawable/departure"
@@ -102,7 +96,7 @@
                     android:backgroundTint="@color/black"
                     android:fontFamily="@font/poppins_light"
                     android:paddingTop="4dp"
-                    android:text="Medan (MDN)" />
+                    android:text="Jakarta" />
 
             </LinearLayout>
         </LinearLayout>
@@ -168,6 +162,7 @@
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSearch"
             android:layout_width="347dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -211,14 +206,11 @@
                 android:layout_height="98dp"
                 android:layout_marginRight="16dp"
                 android:src="@drawable/item_one" />
-
             <ImageView
                 android:layout_width="227dp"
                 android:layout_height="98dp"
                 android:layout_marginRight="16dp"
                 android:src="@drawable/item_two"/>
-
-
         </LinearLayout>
     </HorizontalScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
