@@ -42,8 +42,13 @@ public class BusListActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String tMedan = intent.getStringExtra("tMedan");
-        retrieveData();
+        String tJakarta = intent.getStringExtra("tJakarta");
 
+        if (tJakarta != null) {
+            retrieveData("https://vacillating-feedbac.000webhostapp.com/travel_app/bus/readjakarta.php");
+        } else {
+            retrieveData("https://vacillating-feedbac.000webhostapp.com/travel_app/bus/readbus.php");
+        }
         listTrip.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
@@ -52,8 +57,8 @@ public class BusListActivity extends AppCompatActivity {
         });
     }
 
-    private void retrieveData() {
-        StringRequest request = new StringRequest(Request.Method.POST, "https://vacillating-feedbac.000webhostapp.com/travel_app/bus/readjakarta.php",
+    private void retrieveData(String url) {
+        StringRequest request = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

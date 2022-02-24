@@ -22,15 +22,17 @@ public class Home extends AppCompatActivity {
         String tujuan = etTujuan.getText().toString();
         String asal = etAsal.getText().toString();
         String asalM = "tMedan";
+        String tujuanJ = "tJakarta";
 
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if (tujuan.equals(tujuanJ)){
+                    Intent tMedan = new Intent(Home.this, BusListActivity.class).putExtra("tJakarta", tujuanJ);
+                    startActivity(tMedan);
+                }
                     Intent tMedan = new Intent(Home.this, BusListActivity.class).putExtra("tMedan", asalM);
                     startActivity(tMedan);
-
-
 
             }
         });
