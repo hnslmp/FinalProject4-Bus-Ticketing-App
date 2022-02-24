@@ -118,15 +118,17 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/et_dep"
                     android:layout_width="350dp"
                     android:layout_height="40dp"
+                    android:backgroundTint="@color/black"
                     android:drawableLeft="@drawable/calendar"
                     android:drawablePadding="8dp"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/black"
+                    android:focusable="false"
                     android:fontFamily="@font/poppins_light"
                     android:paddingTop="4dp"
-                    android:text="Kamis, 3 Feb 2022" />
+                    android:text="Kamis, 3 Feb 2022"
+                    android:textColor="@color/black" />
 
             </LinearLayout>
         </LinearLayout>
@@ -148,15 +150,17 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/et_ariv"
                     android:layout_width="350dp"
                     android:layout_height="40dp"
+                    android:backgroundTint="@color/black"
                     android:drawableLeft="@drawable/calendar"
                     android:drawablePadding="8dp"
+                    android:focusable="false"
                     android:fontFamily="@font/poppins_light"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/black"
                     android:paddingTop="4dp"
-                    android:text="Kamis, 3 Feb 2022" />
+                    android:text="Kamis, 3 Feb 2022"
+                    android:textColor="@color/black" />
 
             </LinearLayout>
         </LinearLayout>
